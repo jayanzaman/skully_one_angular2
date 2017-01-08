@@ -5,6 +5,15 @@ import { DashboardComponent } from './dashboard.component';
 import { HeroesComponent } from './heroes.component';
 import { HeroDetailComponent } from './hero-detail.component';
 
+import { MoviesComponent } from './movies.component';
+import { MovieDetailComponent } from './movie-detail.component';
+
+// import { MusicComponent } from './music.component';
+// import { MusicDetailComponent } from './music-detail.component';
+
+// import { BooksComponent } from './books.component';
+// import { BookDetailComponent } from './book-detail.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -22,7 +31,31 @@ const routes: Routes = [
   {
     path: 'heroes',
     component: HeroesComponent
+  },
+  {
+    path: 'movies',
+    component: MoviesComponent
+  },
+  {
+    path: 'movies/:id',
+    component: MovieDetailComponent
   }
+  // {
+  //   path: 'music',
+  //   component: MusicComponent
+  // },
+  // {
+  //   path: 'music/:id',
+  //   component: MusicDetailComponent
+  // },
+  // {
+  //   path: 'books',
+  //   component: BooksComponent
+  // },
+  // {
+  //   path: 'books/:id',
+  //   component: BookDetailComponent
+  // }
 ];
 
 @NgModule({
@@ -31,4 +64,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routedComponents = [DashboardComponent, HeroesComponent, HeroDetailComponent];
+export const routedComponents = [DashboardComponent, HeroesComponent, HeroDetailComponent, MoviesComponent, MovieDetailComponent];

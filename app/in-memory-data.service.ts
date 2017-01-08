@@ -12,6 +12,18 @@ export class InMemoryDataService {
       { id: 19, name: 'Magma' },
       { id: 20, name: 'Tornado' }
     ];
-    return { heroes };
+    let movies = [
+      { id: 11, name: 'Godfather' },
+      { id: 12, name: 'The Green Mile' },
+      { id: 13, name: 'Forest Gump' },
+      { id: 14, name: 'Inception' },
+      { id: 15, name: 'The Matrix' },
+      { id: 16, name: 'Up' },
+      { id: 17, name: 'City of God' },
+      { id: 18, name: 'Terminal' },
+      { id: 19, name: 'Se7en' },
+      { id: 20, name: 'La La Land' }
+    ];
+    return { heroes, movies };
   }
 }
