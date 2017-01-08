@@ -67,7 +67,7 @@ export class MovieService {
       .put(url, JSON.stringify(movie), { headers: headers })
       .toPromise()
       .then(() => movie)
-      .catch(this.handlerror);
+      .catch(this.handleError);
   }
 
   private handlerror(error: any): Promise<any> {

@@ -27,9 +27,10 @@ export class MoviesComponent implements OnInit {
       .catch(error => this.error = error);
   }
 
-  addmovie(): void {
+  addMovie(): void {
     this.addingMovie = true;
     this.selectedMovie = null;
+
   }
 
   close(savedmovie: movie): void {
@@ -37,7 +38,7 @@ export class MoviesComponent implements OnInit {
     if (savedMovie) { this.getMovies(); }
   }
 
-  deletemovie(movie: movie, event: any): void {
+  deleteMovie(movie: movie, event: any): void {
     event.stopPropagation();
     this.movieService
       .delete(movie)
@@ -57,7 +58,7 @@ export class MoviesComponent implements OnInit {
     this.addingMovie = false;
   }
 
-  gotoDetail(): void {
-    this.router.navigate(['/detail', this.selectedMovie.id]);
+  gotoMovies(): void {
+    this.router.navigate(['/movies', this.selectedMovie.id]);
   }
 }

@@ -26,8 +26,9 @@ export class MovieDetailComponent implements OnInit {
       if (params['id'] !== undefined) {
         let id = +params['id'];
         this.navigated = true;
-        this.movieService.getmovie(id)
+        this.movieService.getMovie(id)
             .then(movie => this.movie = movie);
+            console.log(this +" ngOnInit if")
       } else {
         this.navigated = false;
         this.movie = new Movie();
@@ -41,6 +42,7 @@ export class MovieDetailComponent implements OnInit {
         .then(movie => {
           this.movie = movie; // saved movie, w/ id if new
           this.goBack(movie);
+          console.log(this)
         })
         .catch(error => this.error = error); // TODO: Display error message
   }

@@ -9,8 +9,8 @@
 </ul>
 
 <div class="error" *ngIf="error">{{error}}</div>
-<button (click)="addmovie()">Add New Movie</button>
-<div *ngIf="addingmovie">
+<button (click)="addMovie()">Add New Movie</button>
+<div *ngIf="addingMovie">
   <my-movie-detail (close)="close($event)"></my-movie-detail>
 </div>
 
@@ -18,5 +18,5 @@
   <h2>
     {{selectedMovie.name | uppercase}} is my movie
   </h2>
-  <button (click)="gotoDetail()">View Details</button>
+  <button (click)="gotoMovies()">View Details</button>
 </div>
