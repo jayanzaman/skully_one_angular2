@@ -9,7 +9,7 @@
 </ul>
 
 <div class="error" *ngIf="error">{{error}}</div>
-<button (click)="addBook()">Add New Book</button>
+<button class="new_book" (click)="addBook()">Add New Book</button>
 <div *ngIf="addingBook">
   <my-book-detail (close)="close($event)"></my-book-detail>
 </div>
