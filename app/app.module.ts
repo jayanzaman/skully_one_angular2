@@ -12,6 +12,7 @@ import { AppRoutingModule, routedComponents } from './app-routing.module';
 import { HeroService } from './hero.service';
 import { HeroSearchComponent } from './hero-search.component';
 import { MovieService } from './movie.service';
+import { BookService } from './book.service';
 import { MusicService } from './music.service';
 
 
@@ -31,6 +32,7 @@ import { MusicService } from './music.service';
   providers: [
     HeroService,
     MovieService,
+    BookService,
     MusicService
   ],
   bootstrap: [AppComponent]

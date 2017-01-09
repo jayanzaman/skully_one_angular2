@@ -24,6 +24,20 @@ export class InMemoryDataService {
       { id: 9, name: 'Se7en' },
       { id: 10, name: 'La La Land' }
     ];
+
+    let books = [
+      { id: 11, name: 'Mentored By A Millionare' },
+      { id: 12, name: 'Lean Startup' },
+      { id: 13, name: 'Business Of The 21st Century' },
+      { id: 14, name: 'Rich Dad Poor Dad' },
+      { id: 15, name: 'The Interen' },
+      { id: 16, name: 'Google' },
+      { id: 17, name: 'Simple' },
+      { id: 18, name: 'JavaScript The Good Parts' },
+      { id: 19, name: 'Four Hour Work Week' },
+      { id: 20, name: 'How To Win Friends and Influence People' }
+    ]
+
     let musics = [
       { id: 1, name: 'La Vie En Rose' },
       { id: 2, name: 'Georgia On My Mind' },
@@ -36,6 +50,6 @@ export class InMemoryDataService {
       { id: 9, name: 'Everybody Loves Somebody' },
       { id: 10, name: 'Blue Skies' }
     ];
-    return { heroes, movies, musics };
+    return { heroes, movies, musics, books };
   }
 }
