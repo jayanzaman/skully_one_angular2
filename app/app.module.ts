@@ -13,6 +13,7 @@ import { HeroService } from './hero.service';
 import { HeroSearchComponent } from './hero-search.component';
 import { MovieService } from './movie.service';
 import { BookService } from './book.service';
+import { MusicService } from './music.service';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { BookService } from './book.service';
   providers: [
     HeroService,
     MovieService,
-    BookService
+    BookService,
+    MusicService
   ],
   bootstrap: [AppComponent]
 })
