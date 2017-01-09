@@ -56,7 +56,7 @@ const routes: Routes = [
     path: 'books/:id',
     component: BookDetailComponent
   }
-
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

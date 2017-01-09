@@ -16,3 +16,19 @@
   </div>
 </div>
 <!-- <hero-search></hero-search> -->
+<h3>Top Music</h3>
+<div class="grid grid-pad">
+  <div *ngFor="let music of musics" (click)="gotoMusics(music)" class="col-1-4">
+    <div class="module hero">
+      <h4>{{music.name}}</h4>
+    </div>
+  </div>
+</div>
+<h3>Top Books</h3>
+<div class="grid grid-pad">
+  <div *ngFor="let book of books" (click)="gotoBooks(book)" class="col-1-4">
+    <div class="module hero">
+      <h4>{{book.name}}</h4>
+    </div>
+  </div>
+</div>
