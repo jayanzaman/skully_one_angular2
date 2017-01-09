@@ -12,6 +12,7 @@ import { AppRoutingModule, routedComponents } from './app-routing.module';
 import { HeroService } from './hero.service';
 import { HeroSearchComponent } from './hero-search.component';
 import { MovieService } from './movie.service';
+import { MusicService } from './music.service';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { MovieService } from './movie.service';
   ],
   providers: [
     HeroService,
-    MovieService
+    MovieService,
+    MusicService
   ],
   bootstrap: [AppComponent]
 })

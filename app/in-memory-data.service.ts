@@ -1,29 +1,41 @@
 export class InMemoryDataService {
   createDb() {
     let heroes = [
-      { id: 11, name: 'Mr. Nice' },
-      { id: 12, name: 'Narco' },
-      { id: 13, name: 'Bombasto' },
-      { id: 14, name: 'Celeritas' },
-      { id: 15, name: 'Magneta' },
-      { id: 16, name: 'RubberMan' },
-      { id: 17, name: 'Dynama' },
-      { id: 18, name: 'Dr IQ' },
-      { id: 19, name: 'Magma' },
-      { id: 20, name: 'Tornado' }
+      { id: 1, name: 'Mr. Nice' },
+      { id: 2, name: 'Narco' },
+      { id: 3, name: 'Bombasto' },
+      { id: 4, name: 'Celeritas' },
+      { id: 5, name: 'Magneta' },
+      { id: 6, name: 'RubberMan' },
+      { id: 7, name: 'Dynama' },
+      { id: 8, name: 'Dr IQ' },
+      { id: 9, name: 'Magma' },
+      { id: 10, name: 'Tornado' }
     ];
     let movies = [
-      { id: 11, name: 'Godfather' },
-      { id: 12, name: 'The Green Mile' },
-      { id: 13, name: 'Forest Gump' },
-      { id: 14, name: 'Inception' },
-      { id: 15, name: 'The Matrix' },
-      { id: 16, name: 'Up' },
-      { id: 17, name: 'City of God' },
-      { id: 18, name: 'Terminal' },
-      { id: 19, name: 'Se7en' },
-      { id: 20, name: 'La La Land' }
+      { id: 1, name: 'Godfather' },
+      { id: 2, name: 'The Green Mile' },
+      { id: 3, name: 'Forest Gump' },
+      { id: 4, name: 'Inception' },
+      { id: 5, name: 'The Matrix' },
+      { id: 6, name: 'Up' },
+      { id: 7, name: 'City of God' },
+      { id: 8, name: 'Terminal' },
+      { id: 9, name: 'Se7en' },
+      { id: 10, name: 'La La Land' }
     ];
-    return { heroes, movies };
+    let musics = [
+      { id: 1, name: 'La Vie En Rose' },
+      { id: 2, name: 'Georgia On My Mind' },
+      { id: 3, name: 'Midnight Train To Georgia' },
+      { id: 4, name: 'Ribbon In The Sky' },
+      { id: 5, name: 'Summertime' },
+      { id: 6, name: 'LOVE' },
+      { id: 7, name: 'On Bended Knee' },
+      { id: 8, name: 'The Way You Look Tonight' },
+      { id: 9, name: 'Everybody Loves Somebody' },
+      { id: 10, name: 'Blue Skies' }
+    ];
+    return { heroes, movies, musics };
   }
 }

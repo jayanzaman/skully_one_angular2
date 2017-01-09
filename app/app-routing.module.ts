@@ -8,8 +8,8 @@ import { HeroDetailComponent } from './hero-detail.component';
 import { MoviesComponent } from './movies.component';
 import { MovieDetailComponent } from './movie-detail.component';
 
-// import { MusicComponent } from './music.component';
-// import { MusicDetailComponent } from './music-detail.component';
+import { MusicsComponent } from './musics.component';
+import { MusicDetailComponent } from './music-detail.component';
 
 // import { BooksComponent } from './books.component';
 // import { BookDetailComponent } from './book-detail.component';
@@ -39,15 +39,15 @@ const routes: Routes = [
   {
     path: 'movies/:id',
     component: MovieDetailComponent
+  },
+  {
+    path: 'music',
+    component: MusicsComponent
+  },
+  {
+    path: 'musics/:id',
+    component: MusicDetailComponent
   }
-  // {
-  //   path: 'music',
-  //   component: MusicComponent
-  // },
-  // {
-  //   path: 'music/:id',
-  //   component: MusicDetailComponent
-  // },
   // {
   //   path: 'books',
   //   component: BooksComponent
@@ -64,4 +64,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routedComponents = [DashboardComponent, HeroesComponent, HeroDetailComponent, MoviesComponent, MovieDetailComponent];
+export const routedComponents = [DashboardComponent, HeroesComponent, HeroDetailComponent, MoviesComponent, MovieDetailComponent, MusicsComponent, MusicDetailComponent];
