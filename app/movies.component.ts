@@ -33,7 +33,7 @@ export class MoviesComponent implements OnInit {
 
   }
 
-  close(savedmovie: movie): void {
+  close(savedMovie: movie): void {
     this.addingMovie = false;
     if (savedMovie) { this.getMovies(); }
   }
