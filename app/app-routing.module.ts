@@ -11,8 +11,8 @@ import { MovieDetailComponent } from './movie-detail.component';
 // import { MusicComponent } from './music.component';
 // import { MusicDetailComponent } from './music-detail.component';
 
-// import { BooksComponent } from './books.component';
-// import { BookDetailComponent } from './book-detail.component';
+import { BooksComponent } from './books.component';
+import { BookDetailComponent } from './book-detail.component';
 
 const routes: Routes = [
   {
@@ -39,7 +39,7 @@ const routes: Routes = [
   {
     path: 'movies/:id',
     component: MovieDetailComponent
-  }
+  },
   // {
   //   path: 'music',
   //   component: MusicComponent
@@ -48,14 +48,14 @@ const routes: Routes = [
   //   path: 'music/:id',
   //   component: MusicDetailComponent
   // },
-  // {
-  //   path: 'books',
-  //   component: BooksComponent
-  // },
-  // {
-  //   path: 'books/:id',
-  //   component: BookDetailComponent
-  // }
+  {
+    path: 'books',
+    component: BooksComponent
+  },
+  {
+    path: 'books/:id',
+    component: BookDetailComponent
+  }
 ];
 
 @NgModule({
@@ -64,4 +64,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routedComponents = [DashboardComponent, HeroesComponent, HeroDetailComponent, MoviesComponent, MovieDetailComponent];
+export const routedComponents = [DashboardComponent, HeroesComponent, HeroDetailComponent, MoviesComponent, MovieDetailComponent, BooksComponent, BookDetailComponent];
